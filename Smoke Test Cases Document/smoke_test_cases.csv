@@ -1,0 +1,16 @@
+Test ID,Feature,Scenario,Precondition,Steps,Expected Result,Status,Priority
+ST-001,Application Launch,Verify the website/application opens successfully,Application URL is accessible,Open the app URL,Application loads without server/browser error,Pass,High
+ST-002,Homepage Load,Verify homepage UI loads correctly,Application is launched,"Observe header, navigation, content, and footer",Main page sections are visible and aligned,Pass,High
+ST-003,Login Page Access,Verify login page can be opened,Application is launched,Click Login / navigate to login page,Login page opens with username and password fields,Pass,High
+ST-004,Valid Login,Verify user can login with valid credentials,Valid test user exists,Enter valid credentials and submit,User is authenticated and dashboard is displayed,Pass,Critical
+ST-005,Invalid Login Handling,Verify invalid login does not allow access,Login page is available,Enter invalid credentials and submit,Error message appears; user remains unauthenticated,Pass,High
+ST-006,Navigation Menu,Verify main navigation links work,User is on homepage/dashboard,Click each main navigation item,Each page opens without broken links,Pass,High
+ST-007,Search Basic Availability,Verify search field is visible and usable,Application page has search feature,Click search field and type a keyword,Search input accepts text and returns/filters results,Pass,Medium
+ST-008,Create/Add Main Record,Verify a main record can be created,User is logged in,"Open add form, enter mandatory fields, save",Record saves successfully and appears in list,Pass,Critical
+ST-009,Edit Main Record,Verify an existing record can be edited,At least one record exists,"Open edit page, update value, save",Updated value is stored and displayed,Pass,High
+ST-010,Delete/Remove Record,Verify a record can be deleted with confirmation,Test record exists,Click delete and confirm,Record is removed or marked deleted as designed,Pass,High
+ST-011,Form Mandatory Fields,Verify required fields are validated,Form page is available,Submit form with mandatory fields blank,Validation errors appear and form is not submitted,Pass,High
+ST-012,Logout,Verify user can log out,User is logged in,Click Logout,Session ends and user is returned to login/home page,Pass,Critical
+ST-013,Session Restriction,Verify restricted page cannot be opened after logout,User has logged out,Try to access dashboard/restricted URL,User is redirected to login or access denied page,Pass,Critical
+ST-014,Browser Compatibility,Verify application loads in supported browsers,Chrome/Edge available,Open application in supported browsers,Core pages render and function correctly,Pass,Medium
+ST-015,Basic Error-Free Flow,Verify no major console/server errors occur during critical flow,Application is available,"Perform launch, login, navigation, create, edit, logout",No blocking errors observed,Pass,High

@@ -1,0 +1,38 @@
+# Sanity Test Cases Document
+
+**Project:** Smoke Testing and Sanity Testing Documentation  
+**Prepared by:** Ruknuddin Asrari  
+**Role:** Software Quality Engineer  
+**Organisation:** The Career Insights Hub LLC  
+
+## Objective
+
+Prepare sanity test cases for changed or updated features to verify that recent fixes or updates are working as expected without impacting related functionality.
+
+## Sanity Testing Definition
+
+Sanity testing is a focused validation performed after a specific bug fix, change, or small enhancement. It confirms that the updated feature works correctly and that nearby functionality is not broken.
+
+## Sanity Test Cases
+
+|Test ID|Feature|Scenario|Precondition|Steps|Expected Result|Status|Priority|
+|---|---|---|---|---|---|---|---|
+|SN-001|Updated Login Validation|Validate login still works after recent login change|Login module was updated|Test valid and invalid login|Expected behavior remains correct after change|Pass|Critical|
+|SN-002|Password Error Message|Verify updated password validation message|Password validation changed|Submit weak/invalid password|Correct validation message appears|Pass|High|
+|SN-003|Updated Search Filter|Validate changed search filter returns accurate results|Search filter was updated|Search valid keyword and compare displayed results|Only matching records appear|Pass|High|
+|SN-004|Search Empty State|Verify empty/no-result search behavior|Search module was updated|Search invalid keyword|Clear no-result message is displayed|Pass|Medium|
+|SN-005|Updated Add Form Mandatory Fields|Validate changed form required fields|Add form modified|Submit form with missing required fields|Required-field validation works|Pass|High|
+|SN-006|Recently Fixed Save Button|Verify save button works after UI change|Save flow changed|Enter valid data and click Save|Data is saved once without duplicate submission|Pass|High|
+|SN-007|Updated Status Dropdown|Validate status dropdown values after change|Status field updated|Open edit form and review dropdown|Correct status values are listed and selectable|Pass|Medium|
+|SN-008|Report Count Accuracy|Verify report counts after recent reporting change|Report module updated|Compare dashboard/report counts with records|Counts match actual data|Pass|High|
+|SN-009|Navigation After UI Update|Verify navigation links still work after UI/header change|Header/navigation changed|Click updated navigation links|All links route to correct pages|Pass|Medium|
+|SN-010|Regression on Logout|Verify logout works after session/security change|Session handling updated|Login then logout|User is logged out and restricted pages are blocked|Pass|Critical|
+
+
+## Result
+
+All 10 sanity test cases passed. The changed and updated features are working as expected.
+
+---
+
+© 2026 Ruknuddin Asrari. Prepared for The Career Insights Hub LLC.
